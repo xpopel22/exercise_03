@@ -1,49 +1,65 @@
-## Time complexity
+## Computational complexity
 ### Task
 
-The following algorithm, called SelectionSort, is a naive but simple iterative 
-method to solve the Sorting problem. First, SelectionSort finds the
-smallest element in *a*, and moves it to the first position by swapping it with
-whatever happens to be in the first position (i.e., *a1*). Next, SelectionSort
-finds the second smallest element in *a*, and moves it to the second position,
-again by swapping with *a2*. At the *i*th iteration, SelectionSort finds the *i*th
-smallest element in *a*, and moves it to the *i*th position.
+The following algorithm, called Selection sort, is a naive but simple iterative 
+method to solve the sorting problem. First, Selection sort finds the
+smallest element in the list of integers, and moves it to the first position by swapping it with
+whatever happens to be in the first position. Next, Selection sort
+finds the second smallest element in the list, and moves it to the second position,
+again by swapping with value in the second position. At the *i*<sup>th</sup> iteration, Selection sort finds the *i*<sup>th</sup>
+smallest element in the list, and moves it to the *i*<sup>th</sup> position.
 
-Implement functions `IndexOfMin`, `SelectionSort` and `RecursiveSelectionSort`.
+According to the pseudocodes, implement the functions `IndexOfMin()`, `SelectionSort()`, and `RecursiveSelectionSort()`.
 
-`IndexOfMin(array, first, last)` works with array and returns the index of
-the smallest element between positions `first` and `last` by examining each
-element from `array(first)` to `array(last)`.
+
+Function `IndexOfMin()` finds the index of minimal value in the list. It has three inputs: 
+* list of integers,
+* index of the first,
+* index of the last position.
+
+Function returns the index of the smallest element of the list between first and last index.
+
 ```
 IndexOfMin(array, first, last)
   index ← first
   for k ← first + 1 to last
-    if array(k) < array(index)
+    if array[k] < array[index]
       index ← k
   return index
 ```
 
-Iterative version of SelectionSort
+Function `SelectionSort()` iteratively sorts a list of integers. It has two inputs: 
+* list of integers,
+* number of integers in the list. 
+
+Function returns sorted list of integers.
 ```
-SelectionSort(a, n)
+SelectionSort(array, n)
   for i ← 1 to n − 1
-    j ← IndexOfMin(a, i, n)
-    Swap elements a(i) and a(j)
-  return a
+    j ← IndexOfMin(array, i, n)
+    Swap elements array[i] and array[j]
+  return array
 ```
 
-Recursive version of SelectionSort
+Function `RecursiveSelectionSort()` recursively sorts a list of integers. It has three inputs:
+* list of integers,
+* index of the first,
+* index of the last position. 
+
+Function returns sorted list of integers.
+This function performs exactly the same operations as `SelectionSort()` with use of recursion.
 ```
-RecursiveSelectionSort(a, first, last)
+RecursiveSelectionSort(array, first, last)
   if first < last
-    index ← IndexOfMin(a, first, last)
-    Swap a(first) with a(index)
-    a ← RecursiveSelectionSort(a, first + 1, last)
-  return a
+    index ← IndexOfMin(array, first, last)
+    Swap array[first] with array[index]
+    array ← RecursiveSelectionSort(array, first + 1, last)
+  return array
 ```
 
-For each implemented function estimate the number of operations e.g. time complexity as a function of the size of 
-the input. For `SelectionSort` and `RecursiveSelectionSort` estimate the upper bounds and decide which algorithm is
+For each implemented function, estimate the number of operations i.e., computational complexity, depending on the input size. 
+
+For `SelectionSort()` and `RecursiveSelectionSort()` determine the upper bounds and decide which algorithm is
 more efficient.
 
 

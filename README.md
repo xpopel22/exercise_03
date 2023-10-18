@@ -59,7 +59,7 @@ RecursiveSelectionSort(array, first, last)
 
 For each implemented function, estimate the number of operations i.e., computational complexity, depending on the input size. 
 
-For `SelectionSort()` and `RecursiveSelectionSort()` determine the upper bounds and decide which algorithm is
+For `SelectionSort()` and `RecursiveSelectionSort()` determine the *O* notation and decide which algorithm is
 more efficient.
 
 

@@ -93,7 +93,7 @@ RecursiveSelectionSort(array, first, last)
 ```
 
 
-#### Download files from GitHub
+## Download files from GitHub
 <details>
 <summary>Basic Git settings</summary>
 

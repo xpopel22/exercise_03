@@ -2,7 +2,7 @@
 
 ## Computational Complexity
 ### Task 1
- * Calculate the computational complexity of this code segment.
+* Calculate the computational complexity of this code segment.
 
 ```
 1   for r ← 1 to m
@@ -26,15 +26,15 @@ again by swapping with value in the second position. At the *i*<sup>th</sup> ite
 smallest element in the list, and moves it to the *i*<sup>th</sup> position.
 
 ### Task 2
- * In R, implement the function `IndexOfMin()` according to the following pseudocode.
+* In R, implement the function `IndexOfMin()` according to the following pseudocode.
 
- * Input:
-   * list of integers
-   * index of the first position
-   * index of the last position
+* Input:
+    * a list of integers
+    * an index of the first position
+    * an index of the last position
 
- * Output:
-   * index of the smallest element of the list between first and last index
+* Output:
+    * an index of the smallest element of the list between the first and last index
 
 * Estimate the number of operations of this function, i.e., the computational complexity, depending on the input size. 
 
@@ -48,17 +48,17 @@ IndexOfMin(array, first, last)
 ```
 
 ### Task 3 
- * In R, implement the function `SelectionSort()` according to the following pseudocode.
+* In R, implement the function `SelectionSort()` according to the following pseudocode.
 
- * Input:
-   * list of integers
-   * number of integers in the list
+* Input:
+    * a list of integers
+    * a count of integers in the list
 
- * Output:
-   * sorted list of integers
+* Output:
+    * a sorted list of integers
 
- * Estimate the number of operations of this function, i.e., the computational complexity, depending on the input size.
- * Determine the *O* notation.
+* Estimate the number of operations of this function, i.e., the computational complexity, depending on the input size.
+* Determine the *O* notation.
 
 ```
 SelectionSort(array, n)
@@ -69,19 +69,19 @@ SelectionSort(array, n)
 ```
 
 ### Task 4
- * In R, implement the function `RecursiveSelectionSort()` according to the following pseudocode.
+* In R, implement the function `RecursiveSelectionSort()` according to the following pseudocode.
 
- * Input:
-   * list of integers
-   * index of the first position
-   * index of the last position
+* Input:
+    * a list of integers
+    * an index of the first position
+    * an index of the last position
 
- * Output:
-   * sorted list of integers
+* Output:
+    * a sorted list of integers
 
- * Estimate the number of operations of this function, i.e., the computational complexity, depending on the input size.
- * Determine the *O* notation.
- * Decide which algorithm (`SelectionSort()` or `RecursiveSelectionSort()`) algorithm is more efficient.
+* Estimate the number of operations of this function, i.e., the computational complexity, depending on the input size.
+* Determine the *O* notation.
+* Decide which algorithm (`SelectionSort()` or `RecursiveSelectionSort()`) algorithm is more efficient.
 
 ```
 RecursiveSelectionSort(array, first, last)
@@ -97,19 +97,19 @@ RecursiveSelectionSort(array, first, last)
 <details>
 <summary>Basic Git settings</summary>
 
-> * Configure the Git editor
-> ```bash
-> git config --global core.editor notepad
-> ```
-> * Configure your name and email address
-> ```bash
-> git config --global user.name "Zuzana Nova"
-> git config --global user.email z.nova@vut.cz
-> ```
-> * Check current settings
-> ```bash
-> git config --global --list
-> ```
+>* Configure the Git editor
+>    ```bash
+>    git config --global core.editor notepad
+>    ```
+>* Configure your name and email address
+>    ```bash
+>    git config --global user.name "Zuzana Nova"
+>    git config --global user.email z.nova@vut.cz
+>    ```
+>* Check current settings
+>    ```bash
+>    git config --global --list
+>    ```
 >
 </details>
 
